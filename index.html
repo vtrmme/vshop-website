@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSHOP | Desarrollo Premium de Software</title>
+    
+    <meta name="description" content="Especialistas en desarrollo premium de software. Scripts de FiveM optimizados, Bots de Discord avanzados, Mods de Minecraft estables, Citizens personalizados y Desarrollo Web a medida.">
+    <meta name="keywords" content="VSHOP, desarrollo de software, scripts FiveM, bots Discord, mods Minecraft, citizens personalizados, desarrollo web, software premium">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://vshop-premium.github.io/">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vshop-premium.github.io/">
+    <meta property="og:title" content="VSHOP | Desarrollo Premium de Software">
+    <meta property="og:description" content="Especialistas en desarrollo premium de software. Scripts de FiveM optimizados, Bots de Discord avanzados, Mods de Minecraft estables, Citizens personalizados y Desarrollo Web a medida.">
+    <meta property="og:image" content="assets/preview.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://vshop-premium.github.io/">
+    <meta name="twitter:title" content="VSHOP | Desarrollo Premium de Software">
+    <meta name="twitter:description" content="Especialistas en desarrollo premium de software. Scripts de FiveM optimizados, Bots de Discord avanzados, Mods de Minecraft estables, Citizens personalizados y Desarrollo Web a medida.">
+    <meta name="twitter:image" content="assets/preview.webp">
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <meta name="theme-color" content="#E63946">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="particles-canvas"></canvas>
+
+    <div class="parallax-bg" aria-hidden="true"></div>
+
+    <header class="navbar" id="navbar">
+        <div class="navbar-container container">
+            <a href="#hero" class="nav-logo-link" aria-label="Volver al inicio de VSHOP">
+                <img src="assets/logo.gif" alt="VSHOP Logo" class="nav-logo">
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu" aria-label="Navegación principal">
+                <a href="#hero" class="nav-link">Inicio</a>
+                <a href="#productos" class="nav-link">Productos</a>
+                <a href="#ventajas" class="nav-link">Ventajas</a>
+                <a href="#sobre-nosotros" class="nav-link">Sobre Nosotros</a>
+                <a href="#comunidad" class="nav-link">Redes Sociales</a>
+                <button class="nav-btn-link dynamic-link" data-platform="discord" aria-label="Entrar al Discord oficial de VSHOP">Discord</button>
+            </nav>
+
+            <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Alternar menú de navegación móvil">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section" aria-label="Presentación de VSHOP">
+            <div class="hero-content reveal-element">
+                <img src="assets/logo.gif" alt="VSHOP Isotipo Animado" class="hero-logo">
+                <h1 class="hero-title">Desarrollo Premium de Software</h1>
+                <p class="hero-subtitle">Creamos Scripts de FiveM, Bots de Discord, Citizens personalizados, Páginas Web y Mods de Minecraft desarrollados íntegramente por nosotros.</p>
+                <div class="hero-buttons">
+                    <a href="#productos" class="btn btn-primary">Ver Productos</a>
+                    <button class="btn btn-secondary dynamic-link" data-platform="discord">Entrar al Discord</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="productos" class="section-container container" aria-labelledby="title-productos">
+            <div class="section-header reveal-element">
+                <span class="section-tagline">Catálogo Técnico</span>
+                <h2 id="title-productos" class="section-title">Nuestros Productos</h2>
+                <p class="section-description">Todos nuestros recursos y soluciones lógicas son diseñados, programados y optimizados desde cero por el equipo de desarrollo de VSHOP.</p>
+            </div>
+            
+            <div class="products-grid">
+                <article class="product-card reveal-element">
+                    <div class="product-img-wrapper">
+                        <img src="assets/products/fivem.webp" alt="Entorno y Scripts de FiveM Premium" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Scripts de FiveM</h3>
+                        <p class="product-card-desc">Sistemas e infraestructuras avanzadas con un consumo de resmon óptimo, diseñadas para elevar la estabilidad de servidores competitivos.</p>
+                        <button class="btn-product-info dynamic-link" data-platform="discord" aria-label="Comprar o solicitar información sobre Scripts de FiveM">Más información</button>
+                    </div>
+                </article>
+                
+                <article class="product-card reveal-element">
+                    <div class="product-img-wrapper">
+                        <img src="assets/products/discord.webp" alt="Desarrollo de Bots de Discord" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Bots de Discord</h3>
+                        <p class="product-card-desc">Soluciones y automatizaciones a medida para moderación integrada, pasarelas lógicas y arquitecturas API estables.</p>
+                        <button class="btn-product-info dynamic-link" data-platform="discord" aria-label="Comprar o solicitar información sobre Bots de Discord">Más información</button>
+                    </div>
+                </article>
+                
+                <article class="product-card reveal-element">
+                    <div class="product-img-wrapper">
+                        <img src="assets/products/minecraft.webp" alt="Mods y Plugins de Minecraft" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Mods de Minecraft</h3>
+                        <p class="product-card-desc">Plugins robustos y mods optimizados para la integración de mecánicas exclusivas sin pérdida de frames en servidores masivos.</p>
+                        <button class="btn-product-info dynamic-link" data-platform="discord" aria-label="Comprar o solicitar información sobre Mods de Minecraft">Más información</button>
+                    </div>
+                </article>
+                
+                <article class="product-card reveal-element">
+                    <div class="product-img-wrapper">
+                        <img src="assets/products/websites.webp" alt="Desarrollo Web Premium Front-End y Back-End" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Desarrollo Web</h3>
+                        <p class="product-card-desc">Estructuras corporativas, landings tecnológicas y sistemas fluidos que siguen las directrices de diseño UX/UI más exigentes.</p>
+                        <button class="btn-product-info dynamic-link" data-platform="discord" aria-label="Solicitar presupuesto de Desarrollo Web">Más información</button>
+                    </div>
+                </article>
+                
+                <article class="product-card reveal-element">
+                    <div class="product-img-wrapper">
+                        <img src="assets/products/citizens.webp" alt="Citizens e Inyecciones Gráficas Personalizadas" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Citizens Personalizados</h3>
+                        <p class="product-card-desc">Paquetes visuales y optimizaciones de texturas a medida, balanceadas meticulosamente para un rendimiento gráfico estable.</p>
+                        <button class="btn-product-info dynamic-link" data-platform="discord" aria-label="Comprar Citizens Personalizados">Más información</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="ventajas" class="section-container container" aria-labelledby="title-ventajas">
+            <div class="section-header reveal-element">
+                <span class="section-tagline">Garantías VSHOP</span>
+                <h2 id="title-ventajas" class="section-title">¿Por qué elegir VSHOP?</h2>
+            </div>
+            
+            <div class="advantages-grid">
+                <div class="advantage-card reveal-element">
+                    <i class="fa-solid fa-code advantage-icon" aria-hidden="true"></i>
+                    <h3 class="advantage-name">Código Optimizado</h3>
+                    <p class="advantage-desc">Nuestras soluciones arquitectónicas garantizan consumoms mínimos y algoritmos estructurados de forma impecable.</p>
+                </div>
+                <div class="advantage-card reveal-element">
+                    <i class="fa-solid fa-laptop-code advantage-icon" aria-hidden="true"></i>
+                    <h3 class="advantage-name">Desarrollo Propio</h3>
+                    <p class="advantage-desc">Exclusividad garantizada en cada línea de código. No dependemos de plantillas ni de la reventa de recursos ajenos.</p>
+                </div>
+                <div class="advantage-card reveal-element">
+                    <i class="fa-solid fa-shield-halved advantage-icon" aria-hidden="true"></i>
+                    <h3 class="advantage-name">Seguridad</h3>
+                    <p class="advantage-desc">Protección nativa avanzada y pruebas exhaustivas ante vulnerabilidades en entornos de producción en tiempo real.</p>
+                </div>
+                <div class="advantage-card reveal-element">
+                    <i class="fa-solid fa-rotate advantage-icon" aria-hidden="true"></i>
+                    <h3 class="advantage-name">Actualizaciones Constantes</h3>
+                    <p class="advantage-desc">Monitoreo constante e iteraciones oportunas para asegurar la total compatibilidad con las últimas versiones de software.</p>
+                </div>
+                <div class="advantage-card reveal-element">
+                    <i class="fa-solid fa-headset advantage-icon" aria-hidden="true"></i>
+                    <h3 class="advantage-name">Soporte Personalizado</h3>
+                    <p class="advantage-desc">Ingeniería posventa proactiva. Resolvemos tus dudas de implementación técnica de forma rápida e individualizada.</p>
+                </div>
+                <div class="advantage-card reveal-element">
+                    <i class="fa-solid fa-gem advantage-icon" aria-hidden="true"></i>
+                    <h3 class="advantage-name">Alta Calidad</h3>
+                    <p class="advantage-desc">Estándares visuales premium y flujos de trabajo profesionales concebidos para proyectos serios de alto rendimiento.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-nosotros" class="section-container container about-section" aria-labelledby="title-about">
+            <div class="about-grid">
+                <div class="about-image-column reveal-element">
+                    <img src="assets/about.webp" alt="Entorno corporativo e infraestructura técnica de VSHOP" class="about-img" loading="lazy">
+                </div>
+                <div class="about-text-column reveal-element">
+                    <span class="section-tagline">Sobre VSHOP</span>
+                    <h2 id="title-about" class="section-title">Ingeniería comprometida con la perfección</h2>
+                    <p class="about-paragraph">En VSHOP redefinimos el ecosistema de desarrollo de software especializado. Nos alejamos firmemente de las soluciones masivas genéricas y los recursos de terceros para centrar todos nuestros esfuerzos en la autenticidad técnica y la optimización lineal.</p>
+                    <p class="about-paragraph">Nuestra meta primordial es proveer infraestructuras que garanticen un rendimiento sin precedentes, blindaje de seguridad y una experiencia visual de primer nivel. Creemos que la solidez interna del código y el soporte al cliente son los pilares fundamentales para el crecimiento tecnológico.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="estadisticas" class="stats-section" aria-label="Métricas de rendimiento">
+            <div class="container stats-grid">
+                <div class="stat-item reveal-element">
+                    <span class="stat-number" data-target="100">0</span><span class="stat-suffix">+</span>
+                    <p class="stat-label">Clientes</p>
+                </div>
+                <div class="stat-item reveal-element">
+                    <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+                    <p class="stat-label">Proyectos</p>
+                </div>
+                <div class="stat-item reveal-element">
+                    <span class="stat-number" data-target="99">0</span><span class="stat-suffix">%</span>
+                    <p class="stat-label">Clientes Satisfechos</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="comunidad" class="section-container container social-section" aria-labelledby="title-social">
+            <div class="section-header reveal-element">
+                <span class="section-tagline">Comunidad</span>
+                <h2 id="title-social" class="section-title">Síguenos en nuestras redes sociales</h2>
+                <p class="section-description">Forma parte activa de nuestra comunidad para recibir noticias inmediatas, reportes de actualización técnica y acceso exclusivo a nuevos despliegues de software.</p>
+            </div>
+            
+            <div class="social-links-grid reveal-element">
+                <button class="social-card-button dynamic-link" data-platform="instagram" aria-label="Acceder al perfil de Instagram oficial de VSHOP">
+                    <div class="social-icon-card"><i class="fa-brands fa-instagram" aria-hidden="true"></i></div>
+                </button>
+                <button class="social-card-button dynamic-link" data-platform="youtube" aria-label="Acceder al canal de YouTube oficial de VSHOP">
+                    <div class="social-icon-card"><i class="fa-brands fa-youtube" aria-hidden="true"></i></div>
+                </button>
+                <button class="social-card-button dynamic-link" data-platform="discord" aria-label="Unirse al servidor de Discord oficial de VSHOP">
+                    <div class="social-icon-card"><i class="fa-brands fa-discord" aria-hidden="true"></i></div>
+                </button>
+                <button class="social-card-button dynamic-link" data-platform="github" aria-label="Acceder al perfil de GitHub oficial de VSHOP">
+                    <div class="social-icon-card"><i class="fa-brands fa-github" aria-hidden="true"></i></div>
+                </button>
+                <button class="social-card-button dynamic-link" data-platform="steam" aria-label="Acceder a la comunidad de Steam oficial de VSHOP">
+                    <div class="social-icon-card"><i class="fa-brands fa-steam" aria-hidden="true"></i></div>
+                </button>
+                <button class="social-card-button dynamic-link" data-platform="guns" aria-label="Acceder al enlace externo guns.lol de VSHOP">
+                    <div class="social-icon-card"><i class="fa-solid fa-link" aria-hidden="true"></i></div>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-column brand-column">
+                <img src="assets/logo.gif" alt="VSHOP Logotipo Footer" class="footer-logo" loading="lazy">
+                <p class="footer-brand-desc">Empresa especializada en el desarrollo de software premium para FiveM, Discord, Minecraft y desarrollo web.</p>
+            </div>
+            <div class="footer-column links-column">
+                <h4 class="footer-title">Enlaces Rápidos</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#hero" class="footer-link">Inicio</a></li>
+                    <li><a href="#productos" class="footer-link">Productos</a></li>
+                    <li><a href="#ventajas" class="footer-link">Ventajas</a></li>
+                    <li><a href="#sobre-nosotros" class="footer-link">Sobre Nosotros</a></li>
+                    <li><a href="#comunidad" class="footer-link">Redes Sociales</a></li>
+                </ul>
+            </div>
+            <div class="footer-column social-footer-column">
+                <h4 class="footer-title">Comunidad</h4>
+                <div class="footer-social-icons">
+                    <button class="footer-social-icon-btn dynamic-link" data-platform="instagram" aria-label="Instagram de VSHOP"><i class="fa-brands fa-instagram" aria-hidden="true"></i></button>
+                    <button class="footer-social-icon-btn dynamic-link" data-platform="youtube" aria-label="YouTube de VSHOP"><i class="fa-brands fa-youtube" aria-hidden="true"></i></button>
+                    <button class="footer-social-icon-btn dynamic-link" data-platform="discord" aria-label="Discord de VSHOP"><i class="fa-brands fa-discord" aria-hidden="true"></i></button>
+                    <button class="footer-social-icon-btn dynamic-link" data-platform="github" aria-label="GitHub de VSHOP"><i class="fa-brands fa-github" aria-hidden="true"></i></button>
+                    <button class="footer-social-icon-btn dynamic-link" data-platform="steam" aria-label="Steam de VSHOP"><i class="fa-brands fa-steam" aria-hidden="true"></i></button>
+                    <button class="footer-social-icon-btn dynamic-link" data-platform="guns" aria-label="Guns de VSHOP"><i class="fa-solid fa-link" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <hr class="footer-divider">
+            <div class="footer-bottom-flex">
+                <p class="footer-copy">&copy; 2026 VSHOP. Todos los derechos reservados.</p>
+                <p class="footer-credits">Desarrollado por VSHOP</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

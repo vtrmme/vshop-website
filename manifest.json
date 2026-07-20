@@ -1,0 +1,16 @@
+{
+  "short_name": "VSHOP",
+  "name": "VSHOP Premium Software",
+  "icons": [
+    {
+      "src": "assets/favicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#070707",
+  "theme_color": "#E63946",
+  "display": "standalone",
+  "orientation": "portrait"
+}
